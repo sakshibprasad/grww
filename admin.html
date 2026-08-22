@@ -127,8 +127,8 @@
 /* TODO: set your own admin password here, and paste the same Web App URL used in index.html
    once you deploy AppsScript_PasteIntoSheet.gs. This password is a light convenience gate only —
    the real protection is that nobody else has this admin.html URL or the Sheet's Web App URL. */
-const ADMIN_PASSWORD = "CHANGE-THIS-ADMIN-PASSWORD";
-const SHEET_WEBAPP_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const ADMIN_PASSWORD = "Zillout@123";
+const SHEET_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbygfZaaSt63iq4O8FT4yKGKRpsgCdG7AEEJj8OliBIk1zEiRttmgcIymxbuUJDQzbY-Dw/exec";
 
 let allEmployees = [];
 
@@ -235,7 +235,7 @@ function exitDemoOrSignOut(){
 }
 
 function loadAllEmployees(){
-  if(!SHEET_WEBAPP_URL || SHEET_WEBAPP_URL.indexOf('PASTE_YOUR') === 0){
+  if(!SHEET_WEBAPP_URL || SHEET_WEBAPP_URL.indexOf('https://script.google.com/macros/s/AKfycbygfZaaSt63iq4O8FT4yKGKRpsgCdG7AEEJj8OliBIk1zEiRttmgcIymxbuUJDQzbY-Dw/exec') === 0){
     document.getElementById('employeeCount').textContent = 'Sheet URL not configured yet — paste it into SHEET_WEBAPP_URL';
     return;
   }
