@@ -762,7 +762,7 @@ function scheduleCloudSync(){
   cloudSyncTimer = setTimeout(()=> pushToSheet(false), 4000);
 }
 function pushToSheet(manual){
-  if(!SHEET_WEBAPP_URL || SHEET_WEBAPP_URL.indexOf('PASTE_YOUR') === 0){
+  if(!SHEET_WEBAPP_URL || SHEET_WEBAPP_URL.indexOf('https://script.google.com/macros/s/AKfycbx_hjCk9YvTzonVY_l3yG0IPyq0g2ITe_HztF1aBVC9_kWa7Ct0VexStRjZrQ8a-vhvxA/exec') === 0){
     if(manual) toast('Sync not set up yet — ask your admin');
     return;
   }
