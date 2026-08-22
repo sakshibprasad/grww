@@ -235,7 +235,7 @@ function exitDemoOrSignOut(){
 }
 
 function loadAllEmployees(){
-  if(!SHEET_WEBAPP_URL || SHEET_WEBAPP_URL.indexOf('PASTE_YOUR') === 0){
+  if(!SHEET_WEBAPP_URL || SHEET_WEBAPP_URL.indexOf('https://script.google.com/macros/s/AKfycbwUEpJdVk-v-Rm4Q2cuVbRSlWv-SzhYurosoT9YuvGNWoPH-0Mxv0Mzg-Ep2GWa59A-PQ/exec') === 0){
     document.getElementById('employeeCount').textContent = 'Sheet URL not configured yet — paste it into SHEET_WEBAPP_URL';
     return;
   }
